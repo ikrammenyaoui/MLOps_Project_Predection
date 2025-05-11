@@ -15,6 +15,9 @@ install:
 run:
 	$(UVICORN) app.main:app --reload
 
+run-mlflow:
+	mlflow ui 
+
 test:
 	$(PYTHON) -m app.predict
 

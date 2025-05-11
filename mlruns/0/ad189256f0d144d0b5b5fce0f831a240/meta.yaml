@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ad189256f0d144d0b5b5fce0f831a240/artifacts
+end_time: 1746920311513
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ad189256f0d144d0b5b5fce0f831a240
+run_name: capricious-steed-74
+run_uuid: ad189256f0d144d0b5b5fce0f831a240
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746920294116
+status: 3
+tags: []
+user_id: menia

@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from app.schemas import FeaturesInput, PredictionOutput
 from app.model import predict_class, svm_model  # Import svm_model to check feature count
+import mlflow
 
 app = FastAPI(
     title="Speech Prediction API",
@@ -15,16 +16,12 @@ def read_root():
 @app.post("/predict", response_model=PredictionOutput)
 async def predict(input_data: FeaturesInput):
     try:
-        # Get expected feature count from the model
         expected_features = svm_model.n_features_in_
-        
-        # Validate feature count
         if len(input_data.features) != expected_features:
             raise HTTPException(
                 status_code=400,
                 detail=f"Expected {expected_features} features, got {len(input_data.features)}"
             )
-            
         prediction = predict_class(input_data.features)
         return PredictionOutput(prediction=prediction)
     except HTTPException:

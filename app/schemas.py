@@ -6,3 +6,4 @@ class FeaturesInput(BaseModel):
 
 class PredictionOutput(BaseModel):
     prediction: int
+    
