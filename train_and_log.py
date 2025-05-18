@@ -8,6 +8,8 @@ import joblib
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
+
 # ➕ URI du tracking MLflow
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 

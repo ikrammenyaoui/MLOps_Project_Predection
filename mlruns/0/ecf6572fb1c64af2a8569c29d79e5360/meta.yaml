@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ecf6572fb1c64af2a8569c29d79e5360/artifacts
+end_time: 1747080194760
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ecf6572fb1c64af2a8569c29d79e5360
+run_name: zealous-mare-158
+run_uuid: ecf6572fb1c64af2a8569c29d79e5360
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747080150134
+status: 3
+tags: []
+user_id: menia
